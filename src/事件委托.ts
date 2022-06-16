@@ -4,9 +4,9 @@ type OriginEntrust = {
 };
 
 class CreateEntrustDom {
-  public root: HTMLDivElement | null;
-  public originColor: string[];
-  public defaultStr: string | undefined;
+  private root: HTMLDivElement | null;
+  private originColor: string[];
+  private defaultStr: string | undefined;
 
   constructor({ originColor, defaultStr }: OriginEntrust) {
     this.originColor = originColor;
@@ -16,7 +16,7 @@ class CreateEntrustDom {
     this.bindEvent();
   }
 
-  crateElementAndInsert() {
+  private crateElementAndInsert() {
     const str = `
       <ul class="nav">
         ${this.parser(
@@ -32,11 +32,11 @@ class CreateEntrustDom {
 
     this.root!.innerHTML = str;
   }
-  bindEvent() {
+  private bindEvent() {
     let nav = document.querySelector(".nav");
     nav?.addEventListener("click", this.click);
   }
-  click(e: Event) {
+  private click(e: Event) {
     const target = e.target as HTMLLIElement;
     if (target.nodeName.toLocaleLowerCase() === "li") {
       const context = target.innerText;
@@ -44,7 +44,7 @@ class CreateEntrustDom {
       value!.textContent = context;
     }
   }
-  parser(arr: string[]): string {
+  private parser(arr: string[]): string {
     let str = "";
     for (const item of arr) {
       str += item;
