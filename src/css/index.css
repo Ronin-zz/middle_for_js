@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.li-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw / 4);
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.li-item:nth-child(1) {
+  background-color: red;
+}
+.li-item:nth-child(2) {
+  background-color: green;
+}
+.li-item:nth-child(3) {
+  background-color: pink;
+}
+.li-item:nth-child(4) {
+  background-color: blue;
+}
