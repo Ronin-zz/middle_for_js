@@ -9,7 +9,11 @@
   "author": "zzw",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
     "@types/node": "^18.0.0",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",

@@ -20,15 +20,3 @@ li {
   border-bottom: 1px solid #ccc;
   cursor: pointer;
 }
-.li-item:nth-child(1) {
-  background-color: red;
-}
-.li-item:nth-child(2) {
-  background-color: green;
-}
-.li-item:nth-child(3) {
-  background-color: pink;
-}
-.li-item:nth-child(4) {
-  background-color: blue;
-}
